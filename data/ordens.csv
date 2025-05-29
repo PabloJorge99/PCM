@@ -1,0 +1,10 @@
+Equipamento,Tipo,Descrição,Abertura,Execução,Responsável,Status
+Ponte Rolante 5t,Preventiva,Verificação dos cabos de aço,2024-03-01,2024-03-02,Carlos,Finalizada
+Cabine de Pintura,Corretiva,Filtro saturado gerando falhas,2024-03-15,2024-03-16,Joana,Finalizada
+Forno de Secagem,Preventiva,Limpeza interna e checagem dos sensores,2024-04-05,2024-04-06,Ricardo,Finalizada
+Torno CNC Mazak,Corretiva,Erro no painel de controle,2024-04-10,2024-04-12,Marcos,Finalizada
+Laser de Corte,Preventiva,Alinhamento e limpeza de lente,2024-05-01,2024-05-01,Ana,Finalizada
+Plasma de Corte,Corretiva,Pressão do ar instável,2024-05-08,2024-05-09,Leandro,Finalizada
+Dobradeira Hidráulica,Preventiva,Checagem da pressão e lubrificação,2024-05-15,2024-05-16,Paulo,Finalizada
+Robô de Solda Yaskawa,Corretiva,Desalinhamento do braço robótico,2024-05-20,2024-05-21,Camila,Finalizada
+Ponte Rolante 5t,Corretiva,Problema Eletrico,2025-05-29,,Pablo - ti,Aberta
