@@ -46,10 +46,13 @@ df_ativos = carregar_dados(CAMINHO_ATIVOS)
 df_ordens = carregar_dados(CAMINHO_ORDENS)
 
 # Defino as páginas disponíveis
-if st.session_state["tipo"] == "manutencao":
+tipo_usuario = st.session_state.get("tipo", "")
+
+if tipo_usuario == "manutencao":
     menu = ["🏠 Início", "🏭 Ativos", "🛠️ Ordens de Serviço", "📜 Histórico", "📊 Relatórios", "📩 Solicitar Manutenção"]
 else:
-    menu = ["📩 Solicitar Manutenção"]
+    menu = ["🏠 Início", "📩 Solicitar Manutenção"]
+
 
 opcao = st.sidebar.selectbox("Navegar", menu)
 
@@ -59,6 +62,44 @@ with st.sidebar:
     if st.button("🚪 Sair"):
         st.session_state.clear()
         st.rerun()
+
+# Página: Início
+if opcao == "🏠 Início":
+    st.title("🔧 Sistema de PCM - Manutenção Industrial")
+    st.markdown("Bem-vindo ao sistema de Planejamento e Controle da Manutenção (PCM) da Bandeirante Maquinas")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.info("""
+        **Este sistema permite:**
+        - Cadastrar e visualizar ativos industriais
+        - Registrar e acompanhar ordens de serviço (preventiva e corretiva)
+        - Consultar histórico de manutenções
+        - Visualizar relatórios simples de desempenho
+        """)
+    
+    with col2:
+        st.success("""
+        **Para usuários comuns:**
+        - Solicite manutenção de forma simples e rápida
+        - Descreva problemas encontrados nos equipamentos
+        - Acompanhe o status da sua solicitação
+        """)
+
+    st.markdown("---")
+    st.subheader("📊 Visão Geral Rápida")
+
+    total_ativos = len(df_ativos)
+    total_ordens = len(df_ordens)
+    ordens_abertas = df_ordens[df_ordens["Status"] == "Aberta"].shape[0]
+    ordens_finalizadas = df_ordens[df_ordens["Status"] == "Finalizada"].shape[0]
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Ativos Cadastrados", total_ativos)
+    col2.metric("Ordens de Serviço", total_ordens)
+    col3.metric("OS Abertas", ordens_abertas)
+    col4.metric("OS Finalizadas", ordens_finalizadas)
+
 
 # Página: Cadastro de Ativos
 if opcao == "🏭 Ativos":
