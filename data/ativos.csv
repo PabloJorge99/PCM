@@ -1,0 +1,9 @@
+Nome,Código,Local,Fabricante,Data de Aquisição,Observações
+Ponte Rolante 5t,PR-001,Área de Montagem,DEMAG,2020-02-10,Inspeção mensal obrigatória
+Cabine de Pintura,CPT-002,Setor de Pintura,Wanda,2021-08-14,Manter filtros sempre limpos
+Forno de Secagem,FOR-010,Tratamento Térmico,TecTherm,2019-10-01,Evitar sobrecarga térmica
+Torno CNC Mazak,CNC-005,Usinagem,Mazak,2023-04-20,Alta precisão - calibração semestral
+Laser de Corte,LAS-008,Corte a Laser,Trumpf,2022-06-12,Lente substituída em 2024
+Plasma de Corte,PLA-004,Corte a Plasma,Hypertherm,2021-11-18,Checar bicos de corte toda semana
+Dobradeira Hidráulica,DBR-006,Conformação,LVD,2020-05-05,Verificar pressão dos cilindros
+Robô de Solda Yaskawa,ROB-002,Soldagem,Yaskawa,2023-03-01,Revisão elétrica trimestral
