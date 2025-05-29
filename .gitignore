@@ -1,0 +1,23 @@
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+
+# Ambiente virtual
+venv/
+env/
+
+# Arquivos de dados e configurações locais
+data/*.csv
+.data/*.xlsx
+*.db
+
+# Configurações do Streamlit (se quiser manter local)
+.streamlit/
+
+# Arquivos de cache do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos temporários
+*.log
+*.tmp
