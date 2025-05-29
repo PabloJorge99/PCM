@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+primaryColor = "#1a73e8"  # azul Google
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f5f5f5"
+textColor = "#262730"
+font = "sans serif"
+
+[server]
+headless = true
+runOnSave = true
+
+[client]
+toolbarMode = "minimal"
+
+
